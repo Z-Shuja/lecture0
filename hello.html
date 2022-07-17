@@ -2,11 +2,23 @@
 <html>
   <head>
     <title>My webpage!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Brave" />
+    <meta name="description" content="Shuja means Brave" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
     <style>
+      ol > li {
+        color: red;
+      }
+      ul > li {
+        color: red;
+      }
       #middle {
         background-color: aqua;
         width: 40%;
-        height: 580px;
+        height: 750px;
         margin: 30px;
         padding: 30px;
         font-family: Arial, Helvetica, sans-serif;
@@ -56,12 +68,21 @@
       <ul>
         <li>One Item</li>
         <li>Another Item</li>
+        <ol>
+          <li>I am not colored</li>
+          <li>I am not the direct child</li>
+        </ol>
         <li>Yet Another Item</li>
       </ul>
       <h3>An Ordered List:</h3>
       <ol>
+        <p>This is not ol li, it is a p</p>
         <li>First Item</li>
         <li>Second Item</li>
+        <ul>
+          <li>I am drunk</li>
+          <li>Are you drunk</li>
+        </ul>
         <li>Third Item</li>
         <li>Fourth Item</li>
       </ol>
@@ -85,6 +106,16 @@
       </table>
       <form>
         <input type="text" placeholder="Full Name" name="user_name" />
+        <input type="password" placeholder="Password" name="password" />
+        <p>Married?</p>
+        <input type="radio" name="status" value="yes" /> Yes
+        <input type="radio" name="status" value="no" /> NO
+        <p>Your Country</p>
+        <input name="country" list="countries" placeholder="Country" />
+        <datalist id="countries">
+          <option value="Afghanistan"></option>
+          <option value="France"></option>
+        </datalist>
         <button>Submit!</button>
       </form>
     </div>
